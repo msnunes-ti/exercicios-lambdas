@@ -25,8 +25,9 @@ public class LambdaTesteMain {
                 + " Tamanho da lista contendo a letra (a): "
                 + ListaString.listStringContainsA(stringList).size());
 
+        System.out.println(ListaString.listStringContainsA(ListaString.listStringSize(stringList)));
 
+        
 
     }
-
 }
