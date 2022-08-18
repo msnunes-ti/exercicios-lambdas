@@ -17,6 +17,8 @@ public class LambdaTesteMain {
         stringList.add("Cecilia");
         stringList.add("Roberto");
         stringList.add("Romeu");
+        stringList.add("Bia");
+
         System.out.println(stringList + " Lista original tem " + stringList.size() + " itens.");
 
         System.out.println(ListaString.listStringToUpperCase(stringList) + " Para UpperCase");
@@ -25,9 +27,11 @@ public class LambdaTesteMain {
                 + " Tamanho da lista contendo a letra (a): "
                 + ListaString.listStringContainsA(stringList).size());
 
-        System.out.println(ListaString.listStringContainsA(ListaString.listStringSize(stringList)));
+        System.out.println(ListaString.listStringContainsA(ListaString.listStringSize(stringList))
+                + " Tamanho da lista contendo a letra (a) e String´s entre size 4 e 7: "
+                + ListaString.listStringContainsA(ListaString.listStringSize(stringList)).size());
 
-        
+
 
     }
 }
