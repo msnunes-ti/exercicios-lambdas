@@ -11,7 +11,7 @@ public class LambdaIntegerTesteMain {
         integerList.add(3);
         integerList.add(5);
         integerList.add(13);
-        integerList.add(15);
+        integerList.add(13);
         integerList.add(27);
         integerList.add(9);
         integerList.add(7);
@@ -41,8 +41,21 @@ public class LambdaIntegerTesteMain {
             + " Mostrando os 5 primeiros da lista");
 
         // exercicio 8
-        System.out.println(ListaInteger.ignorarNumerosIquais(integerList)
-            + "Mostrando apenas números diferentes - retirando os repetidos");
+        System.out.println(ListaInteger.ignorarNumerosIguais(integerList)
+            + " Mostrando apenas números diferentes - retirando os repetidos");
+
+        // exercício 9
+        System.out.println(ListaInteger.tresFuncoesJuntas(integerList)
+            + " Usando as três funções anteriores" );
+
+        // exercicio 10
+        System.out.println(ListaInteger.maiorNumero(integerList) + " é o maior número.");
+
+        // exercicio 11
+        System.out.println(ListaInteger.menorNumero(integerList) + " é o menor número");
+
+        // exercicio 12
+        System.out.println(ListaInteger.somaMaiorComMenor(integerList) + " é a soma do maior com o menor valor");
 
 
     }

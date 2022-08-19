@@ -30,11 +30,28 @@ public class ListaInteger {
         return integerList.stream().limit(5).toList();
     }
 
-    public static List<Integer> ignorarNumerosIquais(List<Integer> integerList) {
+    public static List<Integer> ignorarNumerosIguais(List<Integer> integerList) {
         return integerList.stream().distinct().toList();
     }
 
+    public static List<Integer> tresFuncoesJuntas(List<Integer> integerList) {
+        return mostraCincoPrimeiros(ignorarNumerosIguais(ignoraDoisPrimeiros(integerList)));
+    }
 
+    public static Integer maiorNumero(List<Integer> integerList) {
+        return integerList.stream().max(Integer::compare).get();
+    }
 
+    public static Integer menorNumero(List<Integer> integerList) {
+        return integerList.stream().min(Integer::compare).get();
+    }
+
+    public static Integer somaMaiorComMenor(List<Integer> integerList) {
+        Integer menor = menorNumero(integerList);
+        Integer maior = maiorNumero(integerList);
+        return menor + maior;
+    }
+
+    
 
 }

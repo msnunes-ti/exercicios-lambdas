@@ -17,4 +17,6 @@ public class ListaString {
     public static List<String> listStringSize(List<String> stringList) {
         return stringList.stream().filter(s -> s.length() > 3 && s.length() < 8).toList();
     }
+
+
 }
