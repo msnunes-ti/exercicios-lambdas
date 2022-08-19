@@ -1,6 +1,9 @@
 package lambdas;
 
+import java.math.BigDecimal;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class ListaInteger {
@@ -69,6 +72,15 @@ public class ListaInteger {
         return integerList.stream().filter(ListaInteger::isPrimo).mapToInt(Integer::intValue).sum();
     }
 
-    public static 
+    public static BigDecimal somaListaBigDecimal(List<BigDecimal> bigDecimalList) {
+        return bigDecimalList.stream().reduce(BigDecimal::add).get();
+    }
+
+    // ARRUMAR
+    public static BigDecimal somaIntervadoDeBigDecimals(List<BigDecimal> bigDecimalList) {
+        return bigDecimalList.stream().reduce(BigDecimal::add).get();
+    }
+
+    
 
 }

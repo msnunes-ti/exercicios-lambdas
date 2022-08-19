@@ -1,5 +1,6 @@
 package lambdas;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -70,6 +71,18 @@ public class LambdaIntegerTesteMain {
         System.out.println(ListaInteger.somaTodosOsPrimos(integerList) + " soma de todos os números primos");
 
         // exercicio 17
+        List<BigDecimal> bigDecimalList = new ArrayList<>();
+        bigDecimalList.add(BigDecimal.valueOf(10.00));
+        bigDecimalList.add(BigDecimal.valueOf(115.00));
+        bigDecimalList.add(BigDecimal.valueOf(30.00));
+        bigDecimalList.add(BigDecimal.valueOf(20.00));
+        bigDecimalList.add(BigDecimal.valueOf(250.00));
+        bigDecimalList.add(BigDecimal.valueOf(20.00));
+        bigDecimalList.add(BigDecimal.valueOf(135.00));
+        System.out.println(ListaInteger.somaListaBigDecimal(bigDecimalList) + " é a soma dos valores BigDecimals");
+
+        // exercício 18
+        System.out.println(ListaInteger.somaIntervadoDeBigDecimals(bigDecimalList));
 
 
 
