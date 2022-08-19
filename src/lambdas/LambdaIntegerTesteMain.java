@@ -57,6 +57,21 @@ public class LambdaIntegerTesteMain {
         // exercicio 12
         System.out.println(ListaInteger.somaMaiorComMenor(integerList) + " é a soma do maior com o menor valor");
 
+        // exercicio 13
+        System.out.println(ListaInteger.divisiveisPorTres(integerList) + " são divisíveis por 3");
+
+        // exercício 14
+        System.out.println(ListaInteger.transformaEmStringList(integerList) + " - Convertidos em String e separados por ;");
+
+        // exercício 15
+        System.out.println(ListaInteger.somaTodos(integerList) + " é a soma de todos os valores");
+
+        // exercício 16
+        System.out.println(ListaInteger.somaTodosOsPrimos(integerList) + " soma de todos os números primos");
+
+        // exercicio 17
+
+
 
     }
 }

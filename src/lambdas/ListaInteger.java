@@ -1,6 +1,7 @@
 package lambdas;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ListaInteger {
 
@@ -52,6 +53,22 @@ public class ListaInteger {
         return menor + maior;
     }
 
-    
+    public static Long divisiveisPorTres(List<Integer> integerList) {
+        return integerList.stream().filter(i -> i % 3 == 0).toList().stream().count();
+    }
+
+    public static String transformaEmStringList(List<Integer> integerList) {
+        return integerList.stream().map(String::valueOf).collect(Collectors.joining("; "));
+    }
+
+    public static Integer somaTodos(List<Integer> integerList) {
+        return integerList.stream().mapToInt(Integer::intValue).sum();
+    }
+
+    public static Integer somaTodosOsPrimos(List<Integer> integerList) {
+        return integerList.stream().filter(ListaInteger::isPrimo).mapToInt(Integer::intValue).sum();
+    }
+
+    public static 
 
 }
