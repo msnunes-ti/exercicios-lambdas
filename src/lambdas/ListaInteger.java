@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class ListaInteger {
@@ -81,6 +82,8 @@ public class ListaInteger {
         return bigDecimalList.stream().reduce(BigDecimal::add).get();
     }
 
-    
+    public static List<Integer> integerList(List<Integer> numPrimos, List<Integer> numeros) {
+        return null;
+    }
 
 }
