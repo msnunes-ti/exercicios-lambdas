@@ -2,8 +2,6 @@ package lambdas;
 
 import java.util.List;
 
-import static java.util.stream.Collectors.toList;
-
 public class ListaString {
 
     public static List<String> listStringToUpperCase(List<String> stringList) {
