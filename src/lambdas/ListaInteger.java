@@ -82,4 +82,5 @@ public class ListaInteger {
     public static List<Integer> integerList(List<Integer> numPrimos, List<Integer> numeros) {
         return null;
     }
+    
 }
