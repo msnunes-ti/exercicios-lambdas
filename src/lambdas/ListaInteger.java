@@ -71,16 +71,17 @@ public class ListaInteger {
     }
 
     public static BigDecimal somaListaBigDecimal(List<BigDecimal> bigDecimalList) {
-        return bigDecimalList.stream().reduce(BigDecimal::add).get();
+        return bigDecimalList.stream().reduce(BigDecimal::add).orElse(BigDecimal.ZERO);
     }
 
-    // ARRUMAR
     public static BigDecimal somaIntervadoDeBigDecimals(List<BigDecimal> bigDecimalList) {
-        return bigDecimalList.stream().reduce(BigDecimal::add).get();
+        return bigDecimalList.stream().filter(b -> b.compareTo(BigDecimal.ZERO) > 0 && b.compareTo(BigDecimal.valueOf(100)) <0).reduce(BigDecimal::add).orElse(BigDecimal.ZERO);
     }
 
     public static List<Integer> integerList(List<Integer> numPrimos, List<Integer> numeros) {
-        return null;
+        return numeros.stream().filter(n -> numPrimos.stream().anyMatch(p -> p.equals(n))).distinct().sorted().toList();
     }
+
+    
 
 }

@@ -81,12 +81,15 @@ public class LambdaIntegerTesteMain {
         bigDecimalList.add(BigDecimal.valueOf(135.00));
         System.out.println(ListaInteger.somaListaBigDecimal(bigDecimalList) + " é a soma dos valores BigDecimals");
 
-        // exercício 18 - ARRUMAR
-        System.out.println(ListaInteger.somaIntervadoDeBigDecimals(bigDecimalList));
+        // exercício 18
+        System.out.println(ListaInteger.somaIntervadoDeBigDecimals(bigDecimalList) + " é a soma dos valores BigDecimals entre 0 e 100");
 
         // exercicio 19
-
+        List<Integer> numPrimos = List.of(2, 3, 5, 7, 11, 13, 17, 19);
+        System.out.println(ListaInteger.integerList(numPrimos, integerList));
 
 
     }
+
+
 }
