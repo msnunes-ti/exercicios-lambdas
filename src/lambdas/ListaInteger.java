@@ -82,6 +82,6 @@ public class ListaInteger {
         return numeros.stream().filter(n -> numPrimos.stream().anyMatch(p -> p.equals(n))).distinct().sorted().toList();
     }
 
-    
+
 
 }
