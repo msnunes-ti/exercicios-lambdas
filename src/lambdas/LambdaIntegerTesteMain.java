@@ -13,6 +13,7 @@ public class LambdaIntegerTesteMain {
         integerList.add(5);
         integerList.add(13);
         integerList.add(13);
+        integerList.add(113);
         integerList.add(27);
         integerList.add(9);
         integerList.add(7);
@@ -88,7 +89,8 @@ public class LambdaIntegerTesteMain {
         List<Integer> numPrimos = List.of(2, 3, 5, 7, 11, 13, 17, 19);
         System.out.println(ListaInteger.integerList(numPrimos, integerList));
 
-
+        // exercicio 20
+        System.out.println(ListaInteger.foraDoIntegerList(numPrimos, integerList));
     }
 
 

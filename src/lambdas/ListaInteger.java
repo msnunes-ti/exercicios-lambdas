@@ -82,7 +82,9 @@ public class ListaInteger {
         return numeros.stream().filter(n -> numPrimos.stream().anyMatch(p -> p.equals(n))).distinct().sorted().toList();
     }
 
+    public static List<Integer> foraDoIntegerList(List<Integer> numPrimos, List<Integer> numeros) {
+        return  numeros.stream().filter(n -> numPrimos.stream().noneMatch(p -> p.equals(n))).distinct().sorted().toList();
+    }
 
-    
 
 }
