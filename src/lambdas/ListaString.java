@@ -16,5 +16,9 @@ public class ListaString {
         return stringList.stream().filter(s -> s.length() > 3 && s.length() < 8).toList();
     }
 
+    //exercicio 21
+    public static List<String> stringDaLista(List<T> tList) {
+        return tList.stream().flatMap(s -> s.getStringList().stream()).toList();
+    }
 
 }

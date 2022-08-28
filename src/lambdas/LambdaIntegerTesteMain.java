@@ -91,6 +91,8 @@ public class LambdaIntegerTesteMain {
 
         // exercicio 20
         System.out.println(ListaInteger.foraDoIntegerList(numPrimos, integerList));
+
+
     }
 
 

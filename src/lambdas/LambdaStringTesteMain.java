@@ -31,7 +31,22 @@ public class LambdaStringTesteMain {
                 + " Tamanho da lista contendo a letra (a) e String´s entre size 4 e 7: "
                 + ListaString.listStringContainsA(ListaString.listStringSize(stringList)).size());
 
-
+        // exercicio 21
+        List<String> tList = new ArrayList<>();
+        tList.add("Bia");
+        tList.add("Marcelo");
+        tList.add("Giseli");
+        tList.add("Gabriel");
+        List<String> tList2 = new ArrayList<>();
+        tList2.add("Jéssica");
+        tList2.add("Naidion");
+        tList2.add("Fernanda");
+        T t1 = new T("t1", tList);
+        T t2 = new T("t2", tList2);
+        List<T> listT = new ArrayList<>();
+        listT.add(t1);
+        listT.add(t2);
+        System.out.println(ListaString.stringDaLista(listT) + " = Lista contida nos 2 T´s. ");
 
     }
 }
