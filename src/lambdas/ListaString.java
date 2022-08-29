@@ -21,4 +21,8 @@ public class ListaString {
         return tList.stream().flatMap(s -> s.getStringList().stream()).toList();
     }
 
+    // exercicio 22
+
+
+
 }
