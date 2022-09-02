@@ -2,13 +2,13 @@ package lambdas;
 
 import java.util.List;
 
-public class T {
+public class TString {
 
     private String nome;
 
     private List<String> stringList;
 
-    public T(String nome, List<String> stringList) {
+    public TString(String nome, List<String> stringList) {
         this.nome = nome;
         this.stringList = stringList;
     }

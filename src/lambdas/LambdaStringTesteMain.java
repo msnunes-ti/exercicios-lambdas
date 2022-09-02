@@ -41,9 +41,9 @@ public class LambdaStringTesteMain {
         tList2.add("Jéssica");
         tList2.add("Naidion");
         tList2.add("Fernanda");
-        T t1 = new T("t1", tList);
-        T t2 = new T("t2", tList2);
-        List<T> listT = new ArrayList<>();
+        TString t1 = new TString("t1", tList);
+        TString t2 = new TString("t2", tList2);
+        List<TString> listT = new ArrayList<>();
         listT.add(t1);
         listT.add(t2);
         System.out.println(ListaString.stringDaLista(listT) + " = Lista contida nos 2 T´s. ");

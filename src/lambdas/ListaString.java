@@ -17,11 +17,11 @@ public class ListaString {
     }
 
     //exercicio 21
-    public static List<String> stringDaLista(List<T> tList) {
+    public static List<String> stringDaLista(List<TString> tList) {
         return tList.stream().flatMap(s -> s.getStringList().stream()).toList();
     }
 
-    // exercicio 22
+
 
 
 

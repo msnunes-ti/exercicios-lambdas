@@ -86,5 +86,10 @@ public class ListaInteger {
         return  numeros.stream().filter(n -> numPrimos.stream().noneMatch(p -> p.equals(n))).distinct().sorted().toList();
     }
 
+    // exercicio 22
+    public static List<Integer> filtroIntegerList(List<TInteger> TIntegerList) {
+        return TIntegerList.stream().filter(t -> t.getIntegerList().size() > 0).flatMap(i -> i.getIntegerList().stream()).sorted().skip(1).toList();
+    }
+
 
 }
