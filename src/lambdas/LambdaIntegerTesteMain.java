@@ -118,7 +118,10 @@ public class LambdaIntegerTesteMain {
         System.out.println(ListaInteger.filtroIntegerList(tIntegerList) + " = Tamanho: " + ListaInteger.filtroIntegerList(tIntegerList).size());
 
         // exercicio 23
-        System.out.println(ListaInteger.filtroIntegerList2(tIntegerList));
+        System.out.println(ListaInteger.filtroIntegerList2(tIntegerList) + " Tamanho: " + ListaInteger.filtroIntegerList2(tIntegerList).size());
+
+        // exercicio 24
+        System.out.println(ListaInteger.somaTodosT(tIntegerList) + " = Soma");
 
     }
 }

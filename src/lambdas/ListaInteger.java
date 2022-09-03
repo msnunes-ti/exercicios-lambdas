@@ -97,7 +97,9 @@ public class ListaInteger {
     }
 
     // exercicio 24
+    public static Integer somaTodosT(List<TInteger> TIntegerList) {
+        return TIntegerList.stream().filter(t -> t.getIntegerList().size() > 0).flatMap(i -> i.getIntegerList().stream()).mapToInt(Integer::intValue).sum();
+    }
 
-    
 
 }
