@@ -91,5 +91,13 @@ public class ListaInteger {
         return TIntegerList.stream().filter(t -> t.getIntegerList().size() > 0).flatMap(i -> i.getIntegerList().stream()).sorted().skip(1).toList();
     }
 
+    // exercicio 23
+    public static List<Integer> filtroIntegerList2(List<TInteger> TIntegerList) {
+        return TIntegerList.stream().filter(t -> t.getIntegerList().size() > 0).flatMap(i -> i.getIntegerList().stream()).filter(i -> i % 2 == 0).sorted().skip(1).toList();
+    }
+
+    // exercicio 24
+
+    
 
 }

@@ -117,8 +117,8 @@ public class LambdaIntegerTesteMain {
         tIntegerList.add(t2);
         System.out.println(ListaInteger.filtroIntegerList(tIntegerList) + " = Tamanho: " + ListaInteger.filtroIntegerList(tIntegerList).size());
 
+        // exercicio 23
+        System.out.println(ListaInteger.filtroIntegerList2(tIntegerList));
 
     }
-
-
 }
