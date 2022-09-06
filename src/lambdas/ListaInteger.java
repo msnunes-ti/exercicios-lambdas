@@ -66,6 +66,7 @@ public class ListaInteger {
         return integerList.stream().mapToInt(Integer::intValue).sum();
     }
 
+    // exercicio 17
     public static Integer somaTodosOsPrimos(List<Integer> integerList) {
         return integerList.stream().filter(ListaInteger::isPrimo).mapToInt(Integer::intValue).sum();
     }
