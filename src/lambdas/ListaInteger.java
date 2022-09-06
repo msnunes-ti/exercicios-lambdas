@@ -74,14 +74,17 @@ public class ListaInteger {
         return bigDecimalList.stream().reduce(BigDecimal::add).orElse(BigDecimal.ZERO);
     }
 
+    // exercicio 19
     public static BigDecimal somaIntervadoDeBigDecimals(List<BigDecimal> bigDecimalList) {
         return bigDecimalList.stream().filter(b -> b.compareTo(BigDecimal.ZERO) > 0 && b.compareTo(BigDecimal.valueOf(100)) <0).reduce(BigDecimal::add).orElse(BigDecimal.ZERO);
     }
 
+    // exercicio 20
     public static List<Integer> integerList(List<Integer> numPrimos, List<Integer> numeros) {
         return numeros.stream().filter(n -> numPrimos.stream().anyMatch(p -> p.equals(n))).distinct().sorted().toList();
     }
 
+    // exercicio 21
     public static List<Integer> foraDoIntegerList(List<Integer> numPrimos, List<Integer> numeros) {
         return  numeros.stream().filter(n -> numPrimos.stream().noneMatch(p -> p.equals(n))).distinct().sorted().toList();
     }
