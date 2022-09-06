@@ -58,6 +58,7 @@ public class ListaInteger {
         return integerList.stream().filter(i -> i % 3 == 0).toList().stream().count();
     }
 
+    // exercicio 
     public static String transformaEmStringList(List<Integer> integerList) {
         return integerList.stream().map(String::valueOf).collect(Collectors.joining("; "));
     }
