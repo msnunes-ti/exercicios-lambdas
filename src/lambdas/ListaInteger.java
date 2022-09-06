@@ -70,6 +70,7 @@ public class ListaInteger {
         return integerList.stream().filter(ListaInteger::isPrimo).mapToInt(Integer::intValue).sum();
     }
 
+    // exercicio 18
     public static BigDecimal somaListaBigDecimal(List<BigDecimal> bigDecimalList) {
         return bigDecimalList.stream().reduce(BigDecimal::add).orElse(BigDecimal.ZERO);
     }
