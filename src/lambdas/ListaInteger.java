@@ -62,6 +62,7 @@ public class ListaInteger {
         return integerList.stream().map(String::valueOf).collect(Collectors.joining("; "));
     }
 
+    // exercicio 16
     public static Integer somaTodos(List<Integer> integerList) {
         return integerList.stream().mapToInt(Integer::intValue).sum();
     }
