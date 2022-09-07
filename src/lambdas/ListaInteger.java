@@ -44,10 +44,12 @@ public class ListaInteger {
         return integerList.stream().max(Integer::compare).get();
     }
 
+    // exercicio 12
     public static Integer menorNumero(List<Integer> integerList) {
         return integerList.stream().min(Integer::compare).get();
     }
 
+    // exercicio 13
     public static Integer somaMaiorComMenor(List<Integer> integerList) {
         Integer menor = menorNumero(integerList);
         Integer maior = maiorNumero(integerList);
