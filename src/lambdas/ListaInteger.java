@@ -40,6 +40,7 @@ public class ListaInteger {
         return mostraCincoPrimeiros(ignorarNumerosIguais(ignoraDoisPrimeiros(integerList)));
     }
 
+    // exercicio 11
     public static Integer maiorNumero(List<Integer> integerList) {
         return integerList.stream().max(Integer::compare).get();
     }
