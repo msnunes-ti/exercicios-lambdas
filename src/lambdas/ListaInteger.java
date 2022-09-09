@@ -36,6 +36,7 @@ public class ListaInteger {
         return integerList.stream().distinct().toList();
     }
 
+    
     public static List<Integer> tresFuncoesJuntas(List<Integer> integerList) {
         return mostraCincoPrimeiros(ignorarNumerosIguais(ignoraDoisPrimeiros(integerList)));
     }
