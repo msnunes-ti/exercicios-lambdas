@@ -18,14 +18,16 @@ public class LambdaStringTesteMain {
         stringList.add("Roberto");
         stringList.add("Romeu");
         stringList.add("Bia");
-
         System.out.println(stringList + " Lista original tem " + stringList.size() + " itens.");
+
         // exercício 1
         System.out.println(ListaString.listStringToUpperCase(stringList) + " Para UpperCase");
+
         // exercício 2
         System.out.println(ListaString.listStringContainsA(stringList)
                 + " Tamanho da lista contendo a letra (a): "
                 + ListaString.listStringContainsA(stringList).size());
+
         // exercício 3
         System.out.println(ListaString.listStringContainsA(ListaString.listStringSize(stringList))
                 + " Tamanho da lista contendo a letra (a) e String´s entre size 4 e 7: "
