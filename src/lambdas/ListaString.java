@@ -23,9 +23,4 @@ public class ListaString {
     public static List<String> stringDaLista(List<TString> tList) {
         return tList.stream().flatMap(s -> s.getStringList().stream()).toList();
     }
-
-
-
-
-
 }

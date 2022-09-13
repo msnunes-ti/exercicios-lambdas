@@ -20,7 +20,6 @@ public class LambdaIntegerTesteMain {
         integerList.add(19);
         integerList.add(35);
         integerList.add(3);
-
         System.out.println(integerList + " Lista original tem " + integerList.size() + " itens.");
 
         // exercicio 4
@@ -122,6 +121,5 @@ public class LambdaIntegerTesteMain {
 
         // exercicio 24
         System.out.println(ListaInteger.somaTodosT(tIntegerList) + " = Soma");
-
     }
 }
