@@ -50,4 +50,5 @@ public class LambdaStringTesteMain {
         listT.add(t2);
         System.out.println(ListaString.stringDaLista(listT) + " = Lista contida nos 2 T´s. ");
     }
+
 }
