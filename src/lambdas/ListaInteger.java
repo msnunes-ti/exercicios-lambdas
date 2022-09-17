@@ -120,6 +120,4 @@ public class ListaInteger {
         return TIntegerList.stream().filter(t -> t.getIntegerList().size() > 0).flatMap(i -> i.getIntegerList().stream()).mapToInt(Integer::intValue).sum();
     }
     
-
-    
 }
