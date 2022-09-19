@@ -2,6 +2,7 @@ package lambdas;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class LambdaIntegerTesteMain {
@@ -92,23 +93,7 @@ public class LambdaIntegerTesteMain {
         System.out.println(ListaInteger.foraDoIntegerList(numPrimos, integerList));
 
         // exercicio 22
-        List<Integer> integers = new ArrayList<>();
-        integers.add(5);
-        integers.add(15);
-        integers.add(25);
-        integers.add(35);
-        integers.add(45);
-        integers.add(55);
-        integers.add(65);
-        integers.add(10);
-        integers.add(20);
-        integers.add(30);
-        integers.add(40);
-        integers.add(60);
-        integers.add(70);
-        integers.add(80);
-        integers.add(90);
-        integers.add(100);
+        List<Integer> integers = Arrays.asList(5, 15, 25, 35, 45, 55, 65, 10, 20, 30, 40, 60, 70, 80, 90, 100);
         TInteger t1 = new TInteger("T1", integers);
         TInteger t2 = new TInteger("T2", integerList);
         List<TInteger> tIntegerList = new ArrayList<>();

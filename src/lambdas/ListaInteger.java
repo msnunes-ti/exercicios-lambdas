@@ -119,6 +119,6 @@ public class ListaInteger {
     public static Integer somaTodosT(List<TInteger> TIntegerList) {
         return TIntegerList.stream().filter(t -> t.getIntegerList().size() > 0).flatMap(i -> i.getIntegerList().stream()).mapToInt(Integer::intValue).sum();
     }
-    
+
     
 }
