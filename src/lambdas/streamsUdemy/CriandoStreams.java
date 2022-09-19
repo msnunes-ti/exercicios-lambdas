@@ -27,6 +27,5 @@ public class CriandoStreams {
 
         // Stream.generate(() -> "a").forEach(print); // imprime infinitamente a letra "a"
         Stream.iterate(0, n -> n + 1).forEach(println); // gera números de 0 até infinito, somando de 1 em 1
-        
     }
 }
