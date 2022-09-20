@@ -20,12 +20,13 @@ public class CriandoStreams {
         Stream.of(maisLinguagens).forEach(print);
         Arrays.stream(maisLinguagens).forEach(print);
         Arrays.stream(maisLinguagens, 1, 3).forEach(print); // Inicia no índice 1 e termina no índice 3
+        Arrays.stream(maisLinguagens).forEach(print);
 
         List<String> outrasLinguagens = Arrays.asList("\nC ", "PHP ", "Kotlin \n");
         outrasLinguagens.stream().forEach(print);
         outrasLinguagens.parallelStream().forEach(print);
 
         // Stream.generate(() -> "a").forEach(print); // imprime infinitamente a letra "a"
-        Stream.iterate(0, n -> n + 1).forEach(println); // gera números de 0 até infinito, somando de 1 em 1
+        // Stream.iterate(0, n -> n + 1).forEach(println); // gera números de 0 até infinito, somando de 1 em 1
     }
 }
