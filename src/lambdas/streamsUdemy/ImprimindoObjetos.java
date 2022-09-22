@@ -26,5 +26,4 @@ public class ImprimindoObjetos {
         Stream<String> stream = aprovados.stream();
         stream.forEach(System.out::println);
     }
-
 }

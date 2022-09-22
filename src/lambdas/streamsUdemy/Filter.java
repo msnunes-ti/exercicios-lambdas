@@ -22,6 +22,5 @@ public class Filter {
                 .filter(a -> a.bomComportamento)
                 .map(a -> "Parabéns " + a.nome + "! Você foi aprovado(a)!")
                 .forEach(System.out::println);
-
     }
 }
