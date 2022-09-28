@@ -10,6 +10,7 @@ public class Aluno {
         this.nome = nome;
         this.nota = nota;
         this.bomComportamento = bomComportamento;
+
         
     }
 }
