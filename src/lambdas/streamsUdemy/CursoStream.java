@@ -11,7 +11,5 @@ public class CursoStream {
         System.out.println(produto);
         System.out.println("O produto é caro? " + isCaro.test(produto));
 
-
-
-    }
+        }
 }
