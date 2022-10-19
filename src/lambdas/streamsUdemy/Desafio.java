@@ -26,6 +26,5 @@ public class Desafio {
                 .apply(p);
 
         System.out.println("O preço final é " + preco);
-
     }
 }
