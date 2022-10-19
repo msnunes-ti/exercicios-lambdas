@@ -13,6 +13,5 @@ public class PredicadoComposicao {
 
         System.out.println(isPar.or(isTresDigitos).test(123));
 
-
     }
 }
