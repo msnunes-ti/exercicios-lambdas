@@ -19,6 +19,5 @@ public class OperadorBinario {
 
         Function<Double, String> conceito = n -> n >= 7.0 ? "Aprovado!" : "Reprovado!";
         System.out.println("Situação: " + media.andThen(conceito).apply(8.0, 6.0));
-
     }
 }
